@@ -1,19 +1,20 @@
 <template>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">Home</a>
+    <router-link class="navbar-brand" to="/">Home</router-link>
     <div class="collapse navbar-collapse" id="navbarColor02">
         <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-            <a class="nav-link" href="#">Contact
+            <router-link class="nav-link" to="/contacts">Contact
             <span class="sr-only">(current)</span>
-            </a>
+            </router-link>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
+            <router-link class="nav-link" to="/about">About</router-link>
         </li>
         </ul>
     </div>
   </nav>
+  <router-view />
 </template>
 
 <script>
