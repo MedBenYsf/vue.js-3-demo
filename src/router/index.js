@@ -2,7 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router';
 
 import Home from '../components/Home';
 import About from '../components/About';
-import Contact from '../components/Contact';
+import Post from '../components/Post';
 import NotFound from '../components/NotFound';
 
 const routes = [
@@ -17,9 +17,9 @@ const routes = [
 		component: About
 	},
 	{
-		path: '/contacts',
-		name: 'Contacts',
-		component: Contact
+		path: '/posts',
+		name: 'Posts',
+		component: Post
 	},
 	{
 		path: '/:catchAll(.*)',
